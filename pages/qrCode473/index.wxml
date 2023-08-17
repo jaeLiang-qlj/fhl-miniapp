@@ -1,0 +1,1 @@
+<yanshang-code bind:openImg="openImg" />

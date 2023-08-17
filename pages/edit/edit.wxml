@@ -1,0 +1,19 @@
+<view class="title">书籍详情</view>
+<view class="title_text">书籍名称</view>
+<view class="input">
+    <input type="text" placeholder="书籍名称" value="{{name}}" bindinput="nameInput" />
+</view>
+<view class="title_text">书籍简介</view>
+<view class="input">
+    <input type="text" placeholder="书籍简介" value="{{introduction}}" bindinput="introductionInput" />
+</view>
+<view class="title_text">书籍来源</view>
+<view class="input">
+    <input type="text" placeholder="书籍来源" value="{{source}}" bindinput="sourceInput" />
+</view>
+<view class="flex">
+    <view class="button" bind:tap="addBook">保存修改</view>
+</view>
+<view class="flex">
+    <view class="button_back" bindtap="backBook">返回</view>
+</view>

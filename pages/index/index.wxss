@@ -1,0 +1,175 @@
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 280rpx;
+  height: 60rpx;
+  background: black;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+page {
+  background: #ffffff;
+}
+
+.block {
+  width: 680rpx;
+  padding: 15rpx;
+  background: white;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  border: 2rpx solid #686868;
+}
+
+.delete {
+  font-size: 22rpx;
+  color: rgb(84, 100, 248);
+  position: absolute;
+  right: 15rpx;
+  top: 15rpx;
+}
+
+.name {
+  width: 500rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.introduction {
+  width: 500rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.introduction text {
+  color: #686868;
+  font-size: 26rpx;
+}
+
+.source {
+  width: 500rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.source text {
+  color: #686868;
+  font-size: 26rpx;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 600rpx;
+  height: 80rpx;
+  background: rgb(242, 243, 249);
+  border-radius: 15rpx;
+  margin-top: 200rpx;
+  padding-left: 15rpx;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.input input {
+  margin-left: 15rpx;
+}
+
+.tabber {
+  display: flex;
+  align-items: center;
+  margin-top: 25rpx;
+  box-shadow: 0rpx 8rpx 10rpx rgb(231, 231, 231);
+}
+
+.sex {
+  margin-left: 20rpx;
+  padding-bottom: 10rpx;
+}
+
+.sex_y {
+  margin-left: 20rpx;
+  font-weight: bold;
+  padding-bottom: 10rpx;
+  border-bottom: 4rpx solid #f83b3b;
+}
+
+.meBook {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.meBook_title {
+  letter-spacing: 10rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+  margin-left: 30rpx;
+}
+
+.meBook_button {
+  width: 240rpx;
+  height: 50rpx;
+  background: black;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  position: absolute;
+  right: 30rpx;
+}
+
+.book_title {
+  margin-left: 40rpx;
+  font-size: 35rpx;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.book_block {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.book_img {
+  display: flex;
+  justify-content: center;
+}
+
+.book_img image {
+  width: 160rpx;
+  height: 200rpx;
+}
+
+.book_name {
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.book_people {
+  font-size: 22rpx;
+  margin-top: 5rpx;
+  opacity: 0.6;
+}

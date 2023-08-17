@@ -1,0 +1,57 @@
+.banner image {
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.layout {
+  background-color: #1d32c4;
+  padding-bottom: 50rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-black {
+  width: 690rpx;
+  height: 386rpx;
+  position: relative;
+  background-color: #b9d9ff;
+  border-radius: 15rpx;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-black image {
+  width: 100%;
+  height: 100%;
+}
+
+.item-button {
+  position: absolute;
+  bottom: 25rpx;
+  width: 630rpx;
+  height: 100rpx;
+  background-color: #ef2020;
+  border-radius: 50rpx;
+  font-size: 42rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  animation: run 1s infinite;
+}
+
+@keyframes run {
+  50% {
+    transform: scale(0.95);
+  }
+}

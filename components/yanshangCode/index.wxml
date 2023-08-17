@@ -1,0 +1,11 @@
+<view class="layout">
+  <view class="banner">
+    <image src="https://static.mirco.link/static/yanshang/miniapp/banner.png" mode="widthFix" />
+  </view>
+  <view class="item">
+    <view class="item-black" bindtap="openImg">
+      <image src="https://static.mirco.link/static/yanshang/cover/%E7%94%B7%E7%B2%89%E4%BD%8E%E9%97%A8%E6%A7%9B%E8%90%BD%E5%9C%B0%E9%A1%B9%E7%9B%AE1.png" mode="widthFix" />
+      <view class="item-button">点击查看项目</view>
+    </view>
+  </view>
+</view>

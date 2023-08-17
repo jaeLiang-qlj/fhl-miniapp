@@ -1,0 +1,20 @@
+.css {
+  margin: 30rpx;
+}
+
+.text {
+  padding-bottom: 40px;
+}
+
+.text-x {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+
+.text-y {
+  padding-top: 5px;
+  font-size: 14px;
+  display: block;
+}

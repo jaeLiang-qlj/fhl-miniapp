@@ -1,0 +1,43 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "fhl-miniapp",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/qrCode1/index",
+          "query": "link_id=30002023000273531&channel_id=2&channel_adv=2&page=0&uuid=uuid-3a7df3e8779645ddb783533b5c67ed77&project_id=7",
+          "launchMode": "default",
+          "scene": 1065
+        },
+        {
+          "name": "wx",
+          "pathName": "pages/tx-channel/index",
+          "query": "channel_id=2",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/code/index",
+          "query": "link_id=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "视频",
+          "pathName": "pages/video/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.32.2"
+}

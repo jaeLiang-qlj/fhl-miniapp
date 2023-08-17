@@ -1,0 +1,26 @@
+<view wx:if="{{isSh}}">
+  <view class="sh_img">
+    <image src="https://static.mirco.link/static/tiktok_h5/advert/img8.png" mode="widthFix" />
+    <image src="https://static.mirco.link/static/tiktok_h5/advert/img9.png" mode="widthFix" />
+    <image src="https://static.mirco.link/static/tiktok_h5/advert/img10.png" mode="widthFix" />
+    <image src="https://static.mirco.link/static/tiktok_h5/advert/img11.png" mode="widthFix" />
+  </view>
+  <view class="flex">
+    <view class="package_button">
+      <view class="agreement">
+        <checkbox value="cb" checked="" />
+        <text class="agreement_text">我已阅读并同意</text>
+        <text class="agreement_test" bindtap="jump">《个人信息与隐私保护条款》</text>
+      </view>
+      <view class="flex">
+        <view class="input">
+          <input type="number" bindinput="phoneInput" value="{{phone}}" maxlength="11" placeholder="手机号" />
+        </view>
+        <view class="submit" bindtap="submitPhone">提交</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <yanshang-code bind:openImg="openImg" />
+</view>

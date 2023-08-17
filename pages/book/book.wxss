@@ -1,0 +1,22 @@
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 200rpx;
+}
+
+.img image {
+    width: 400rpx;
+    height: 480rpx;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20rpx;
+}
+
+.author {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10rpx;
+}

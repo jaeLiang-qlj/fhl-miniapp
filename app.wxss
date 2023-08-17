@@ -1,0 +1,43 @@
+
+page {
+  height: 100%;
+}
+
+.hide {
+  display: none!important;
+}
+
+.container,
+input,
+button {
+  font: 14px "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}
+
+.container {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.nodata{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.nodata_img{
+	display: block;
+	width: 45px;
+	height: 45px;
+}
+
+.nodata_text{
+	color:#dedede;
+	font-size: 12px;
+	padding-left: 10px;
+}

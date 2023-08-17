@@ -1,0 +1,93 @@
+.back image {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.button_img {
+  width: 672rpx;
+  height: 120rpx;
+  position: relative;
+  margin-top: -600rpx;
+}
+
+.button_img image {
+  width: 672rpx;
+  height: 120rpx;
+}
+
+.botton_text {
+  position: absolute;
+  bottom: 34rpx;
+  color: #0000aa;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.sh_img {
+  padding-bottom: 200rpx;
+}
+
+.sh_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.package_button {
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background: white;
+  color: white;
+  font-size: 40rpx;
+  padding-bottom: 40rpx;
+  box-shadow: 0rpx -10rpx 10rpx rgba(123, 123, 123, 0.3);
+}
+
+.input input {
+  width: 400rpx;
+  height: 46rpx;
+  border-radius: 100rpx;
+  font-size: 28rpx;
+  padding-top: 4rpx;
+  padding-bottom: 4rpx;
+  padding-left: 24rpx;
+  color: #000;
+  border: 2rpx solid #fd2c55;
+}
+
+.submit {
+  width: 160rpx;
+  height: 60rpx;
+  background: #fd2c55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rpx;
+  margin-left: 40rpx;
+  font-size: 32rpx;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  margin-left: 120rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.agreement_text {
+  color: rgb(7, 7, 7);
+  margin-left: 6rpx;
+  font-size: 24rpx;
+}
+
+.agreement_test {
+  color: #296bef;
+  margin-left: 6rpx;
+  font-size: 24rpx;
+}

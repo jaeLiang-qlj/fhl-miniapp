@@ -1,0 +1,158 @@
+<!-- <view class="flex">
+    <view class="search">
+        <view class="icon">
+            <icon class="icon-small" type="search" size="20"></icon>
+        </view>
+        <view class="input">
+            <input type="text" placeholder="请输入要搜索的书籍" bindinput="searchInput" bindconfirm="search" />
+        </view>
+    </view>
+</view> -->
+<view class="tabber">
+    <view class='{{sex == 1 ? "sex_y":"sex"}}' data-sex="1" bindtap='checkSex'>书架1</view>
+    <view class='{{sex == 2 ? "sex_y":"sex"}}' data-sex="2" bindtap='checkSex'>书架2</view>
+</view>
+<view class="meBook">
+    <view class="meBook_title">我的书籍</view>
+    <view class="meBook_button" bindtap="addBook" wx:if="{{listBook.length > 0}}">+ 添加书籍</view>
+</view>
+<view class="flex">
+    <view class="button" bindtap="addBook" wx:if="{{listBook.length == 0}}">+ 添加书籍</view>
+</view>
+<view class="flex" wx:for="{{listBook}}" wx:key="index">
+    <view class="block">
+        <view class="name" bindtap="editBook" data-index="{{index}}">{{item.name}}</view>
+        <view class="introduction" bindtap="editBook" data-index="{{index}}">
+            <text>书籍简介：{{item.introduction}}</text>
+        </view>
+        <view class="source" bindtap="editBook" data-index="{{index}}">
+            <text>书籍来源：{{item.source}}</text>
+        </view>
+        <view class="delete" bindtap="removeBook" data-index="{{index}}">删除</view>
+    </view>
+</view>
+<view class="book_title">热书推荐</view>
+<view wx:if="{{sex == 1}}">
+    <view class="book">
+        <view class="book_block" data-img="1" data-author="卖报小郎君" data-name="大奉打更人" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/1.jpeg" />
+            </view>
+            <view class="book_name">大奉打更人</view>
+            <view class="book_people">卖报小郎君</view>
+        </view>
+        <view class="book_block" data-img="2" data-author="小道不讲武德" data-name="皓玉真仙" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/2.jpeg" />
+            </view>
+            <view class="book_name">皓玉真仙</view>
+            <view class="book_people">小道不讲武德</view>
+        </view>
+        <view class="book_block" data-img="3" data-author="血红" data-name="嘉佑嬉事" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/3.jpeg" />
+            </view>
+            <view class="book_name">嘉佑嬉事</view>
+            <view class="book_people">血红</view>
+        </view>
+        <view class="book_block" data-img="4" data-author="高楼大厦" data-name="太初" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/4.jpeg" />
+            </view>
+            <view class="book_name">太初</view>
+            <view class="book_people">高楼大厦</view>
+        </view>
+    </view>
+    <view class="book">
+        <view class="book_block" data-img="5" data-author="蝴蝶蓝" data-name="王者时刻" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/5.jpeg" />
+            </view>
+            <view class="book_name">王者时刻</view>
+            <view class="book_people">蝴蝶蓝</view>
+        </view>
+        <view class="book_block" data-img="6" data-author="爱潜水的乌贼" data-name="诡秘之主" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/6.jpeg" />
+            </view>
+            <view class="book_name">诡秘之主</view>
+            <view class="book_people">爱潜水的乌贼</view>
+        </view>
+        <view class="book_block" data-img="7" data-author="小刀锋利" data-name="无疆" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/7.jpeg" />
+            </view>
+            <view class="book_name">无疆</view>
+            <view class="book_people">小刀锋利</view>
+        </view>
+        <view class="book_block" data-img="8" data-author="辰东" data-name="圣墟" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/8.jpeg" />
+            </view>
+            <view class="book_name">圣墟</view>
+            <view class="book_people">辰东</view>
+        </view>
+    </view>
+</view>
+<view wx:if="{{sex == 2}}">
+    <view class="book">
+        <view class="book_block" data-img="9" data-author="油爆香菇" data-name="退下，让朕来" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/9.jpeg" />
+            </view>
+            <view class="book_name">退下，让朕来</view>
+            <view class="book_people">油爆香菇</view>
+        </view>
+        <view class="book_block" data-img="10" data-author="郁雨竹" data-name="魏晋干饭人" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/10.jpeg" />
+            </view>
+            <view class="book_name">魏晋干饭人</view>
+            <view class="book_people">郁雨竹</view>
+        </view>
+        <view class="book_block" data-img="11" data-author="荆棘之歌" data-name="宋檀记事" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/11.jpeg" />
+            </view>
+            <view class="book_name">宋檀记事</view>
+            <view class="book_people">荆棘之歌</view>
+        </view>
+        <view class="book_block" data-img="12" data-author="卿浅" data-name="被夺一切后她封神回归" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/12.jpeg" />
+            </view>
+            <view class="book_name">被夺一切后她..</view>
+            <view class="book_people">卿浅</view>
+        </view>
+    </view>
+    <view class="book">
+        <view class="book_block" data-img="13" data-author="幻想会瘦" data-name="我有修真界绿卡" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/13.jpeg" />
+            </view>
+            <view class="book_name">我有修真界绿卡</view>
+            <view class="book_people">幻想会瘦</view>
+        </view>
+        <view class="book_block" data-img="14" data-author="须尾俱全" data-name="末日乐园" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/14.jpeg" />
+            </view>
+            <view class="book_name">末日乐园</view>
+            <view class="book_people">须尾俱全</view>
+        </view>
+        <view class="book_block" data-img="15" data-author="彩虹鱼" data-name="宝妈在修真界富甲一方" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/15.jpeg" />
+            </view>
+            <view class="book_name">宝妈在修真界..</view>
+            <view class="book_people">彩虹鱼</view>
+        </view>
+        <view class="book_block" data-img="16" data-author="饭团桃子控" data-name="掌河山" bindtap="detailsBook">
+            <view class="book_img">
+                <image src="https://static.mirco.link/static/wx_miniapp_youhui/miniapp/book/16.jpeg" />
+            </view>
+            <view class="book_name">掌河山</view>
+            <view class="book_people">饭团桃子控</view>
+        </view>
+    </view>
+</view>
